@@ -88,10 +88,10 @@ fun SortScreenContent(
     Column(
         Modifier
             .fillMaxSize()
-            .padding(16.dp)
+            .padding(horizontal = 16.dp).padding(top = 40.dp)
             .verticalScroll(rememberScrollState())
     ) {
-        Text("AlgoVisual", fontSize = 24.sp, fontWeight = FontWeight.Bold, modifier = Modifier.padding(bottom = 16.dp))
+        Text("AlgoVisual", fontSize = 24.sp, fontWeight = FontWeight.Bold, modifier = Modifier.padding(bottom = 16.dp, top = 24.dp))
 
         Box(
             modifier = Modifier.height(280.dp).fillMaxWidth().clip(RoundedCornerShape(8.dp)).background(Color.White),
@@ -128,9 +128,9 @@ fun SortScreenContent(
         Text(text = "Скорость анимации: ${speedAnim.toInt()}", fontSize = 14.sp)
         Slider(
             value = speedAnim,
-            steps = 4,
+            steps = 5,
             onValueChange = { speedAnim = it },
-            valueRange = 1f..20f,
+            valueRange = 1f..100f,
             enabled = !isRunning,
             colors = sliderColors
         )
