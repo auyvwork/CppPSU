@@ -171,7 +171,7 @@ fun SortScreenContent(
             if (selectedSort < 2) {
                 HorizontalDivider(Modifier.padding(vertical = 12.dp), thickness = 0.5.dp)
                 Row(Modifier.fillMaxWidth(), Arrangement.SpaceBetween, Alignment.CenterVertically) {
-                    Text(text = "Накопление в конце", color = if(isRunning) Color.Gray else Color.Black)
+                    Text(text = "Накопление в начале", color = if(isRunning) Color.Gray else Color.Black)
                     Switch(checked = accStart, onCheckedChange = { accStart = it }, colors = blackSwitchColors, enabled = !isRunning)
                 }
             }
