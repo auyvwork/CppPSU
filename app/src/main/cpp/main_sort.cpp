@@ -22,17 +22,10 @@ Java_com_example_cpppsu_SortEngine_runSort(JNIEnv* env, jobject thiz, jintArray 
         if (speedAnim > 0) usleep(speedAnim * 1000);
     };
 
-    auto iteration = [&](const int* arr, int size) {
-        std::string s = "Pass: ";
-        for(int i = 0; i < size; i++) {
-            s += (arr[i] == -1 ? "|" : std::to_string(arr[i])) + " ";
-        }
-        __android_log_print(ANDROID_LOG_DEBUG, "SortEngine", "%s", s.c_str());
-    };
 
     switch(type) {
-        case 0: Sorting::bubbleSort(elements, n, asc, accStart, visualizer, iteration); break;
-        case 1: Sorting::selectionSort(elements, n, asc, visualizer, iteration); break;
+        case 0: Sorting::bubbleSort(elements, n, asc, accStart, visualizer); break;
+        case 1: Sorting::selectionSort(elements, n, asc, visualizer); break;
         case 2: Sorting::insertionSort(elements, n, asc, visualizer); break;
         case 3: Sorting::shellSort(elements, n, asc, visualizer); break;
         case 4: Sorting::heapSort(elements, n, asc, visualizer); break;

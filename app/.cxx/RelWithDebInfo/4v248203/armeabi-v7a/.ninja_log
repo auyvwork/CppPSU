@@ -1,0 +1,4 @@
+# ninja log v5
+0	568	7895066365524122	CMakeFiles/cpppsu.dir/sorting_algorithms.cpp.o	ae68a213e0fabc80
+4	598	7895066365811921	CMakeFiles/cpppsu.dir/main_sort.cpp.o	811725c33c751e49
+598	656	7895066366414048	C:/Users/auyv/Documents/CppPSU/app/build/intermediates/cxx/RelWithDebInfo/4v248203/obj/armeabi-v7a/libcpppsu.so	1beb6b0f81570c31

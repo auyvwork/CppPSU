@@ -1,0 +1,4 @@
+# ninja log v5
+0	568	7895066388371371	CMakeFiles/cpppsu.dir/sorting_algorithms.cpp.o	4ca8fbc26219b733
+5	594	7895066388617601	CMakeFiles/cpppsu.dir/main_sort.cpp.o	28a8d6aec9233389
+594	651	7895066389200370	C:/Users/auyv/Documents/CppPSU/app/build/intermediates/cxx/RelWithDebInfo/4v248203/obj/x86_64/libcpppsu.so	ddb7a60d48c13bd5

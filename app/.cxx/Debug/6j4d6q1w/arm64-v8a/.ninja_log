@@ -1,0 +1,20 @@
+# ninja log v5
+0	1111	7894899848797442	CMakeFiles/cpppsu.dir/sorting_algorithms.cpp.o	78ff0890d4726865
+11	1286	7894899850494929	CMakeFiles/cpppsu.dir/main_sort.cpp.o	ac8ec50ee16e5637
+1286	1382	7894899851485291	C:/Users/auyv/Documents/CppPSU/app/build/intermediates/cxx/Debug/6j4d6q1w/obj/arm64-v8a/libcpppsu.so	7f5b438d5c5cf325
+3	519	7895056015420665	CMakeFiles/cpppsu.dir/sorting_algorithms.cpp.o	78ff0890d4726865
+8	583	7895056016042055	CMakeFiles/cpppsu.dir/main_sort.cpp.o	ac8ec50ee16e5637
+583	652	7895056016742445	C:/Users/auyv/Documents/CppPSU/app/build/intermediates/cxx/Debug/6j4d6q1w/obj/arm64-v8a/libcpppsu.so	7f5b438d5c5cf325
+4	962	7895920493023971	CMakeFiles/cpppsu.dir/main_sort.cpp.o	ac8ec50ee16e5637
+962	1274	7895920496165313	C:/Users/auyv/Documents/CppPSU/app/build/intermediates/cxx/Debug/6j4d6q1w/obj/arm64-v8a/libcpppsu.so	7f5b438d5c5cf325
+3	806	7896651175426882	CMakeFiles/cpppsu.dir/sorting_algorithms.cpp.o	78ff0890d4726865
+3	612	7896651392610634	CMakeFiles/cpppsu.dir/main_sort.cpp.o	ac8ec50ee16e5637
+612	910	7896651395590299	C:/Users/auyv/Documents/CppPSU/app/build/intermediates/cxx/Debug/6j4d6q1w/obj/arm64-v8a/libcpppsu.so	7f5b438d5c5cf325
+4	988	7897505462220721	CMakeFiles/cpppsu.dir/sorting_algorithms.cpp.o	78ff0890d4726865
+8	994	7897505462354879	CMakeFiles/cpppsu.dir/main_sort.cpp.o	ac8ec50ee16e5637
+994	1187	7897505464303580	C:/Users/auyv/Documents/CppPSU/app/build/intermediates/cxx/Debug/6j4d6q1w/obj/arm64-v8a/libcpppsu.so	7f5b438d5c5cf325
+5	629	7897506519419461	CMakeFiles/cpppsu.dir/sorting_algorithms.cpp.o	78ff0890d4726865
+11	691	7897506520022730	CMakeFiles/cpppsu.dir/main_sort.cpp.o	ac8ec50ee16e5637
+691	744	7897506520563255	C:/Users/auyv/Documents/CppPSU/app/build/intermediates/cxx/Debug/6j4d6q1w/obj/arm64-v8a/libcpppsu.so	7f5b438d5c5cf325
+12	570	7897506802979601	CMakeFiles/cpppsu.dir/sorting_algorithms.cpp.o	78ff0890d4726865
+571	626	7897506803536729	C:/Users/auyv/Documents/CppPSU/app/build/intermediates/cxx/Debug/6j4d6q1w/obj/arm64-v8a/libcpppsu.so	7f5b438d5c5cf325

@@ -23,16 +23,7 @@ struct SortStats {
 
 namespace Sorting {
 
-    void sendIterationUpdate(int* arr, int n, int mark, const IterationCallback& iteration) {
-        if (!iteration) return;
-        std::vector<int> displayVec(arr, arr + n);
-        if (mark >= 0 && mark < n) {
-            displayVec[mark] = -1;
-        }
-        iteration(displayVec.data(), n);
-    }
-
-    void bubbleSort(int* arr, int n, bool asc, bool fromStart, const VisualizerCallback& sync, IterationCallback iteration) {
+    void bubbleSort(int* arr, int n, bool asc, bool fromStart, const VisualizerCallback& sync) {
         SortStats stats;
         stats.reset("Bubble Sort");
 
@@ -49,12 +40,11 @@ namespace Sorting {
                     stats.swaps++;
                 }
             }
-            sendIterationUpdate(arr, n, fromStart ? i : n - 1 - i, iteration);
         }
         stats.print();
     }
 
-    void selectionSort(int* arr, int n, bool asc, const VisualizerCallback& sync, IterationCallback iteration) {
+    void selectionSort(int* arr, int n, bool asc, const VisualizerCallback& sync) {
         SortStats stats;
         stats.reset("Selection Sort");
 
@@ -72,7 +62,6 @@ namespace Sorting {
                 stats.swaps++;
                 sync(i, targetIdx);
             }
-            sendIterationUpdate(arr, n, i, iteration);
         }
         stats.print();
     }

@@ -1,0 +1,1 @@
+C:\Users\auyv\Documents\CppPSU\app\src\main\cpp\CMakeLists.txt
