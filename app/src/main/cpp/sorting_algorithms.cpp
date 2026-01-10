@@ -14,7 +14,7 @@ struct SortStats {
         swaps = 0;
     }
 
-    void print() const {
+    void print(){
         __android_log_print(ANDROID_LOG_INFO, "SortStats",
                             "%s: Comparisons: %d, Swaps: %d",
                             name.c_str(), comparisons, swaps);
@@ -23,7 +23,7 @@ struct SortStats {
 
 namespace Sorting {
 
-    void sendIterationUpdate(int* arr, int n, int mark, IterationCallback iteration) {
+    void sendIterationUpdate(int* arr, int n, int mark, const IterationCallback& iteration) {
         if (!iteration) return;
         std::vector<int> displayVec(arr, arr + n);
         if (mark >= 0 && mark < n) {

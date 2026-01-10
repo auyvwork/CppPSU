@@ -14,12 +14,12 @@ Java_com_example_cpppsu_SortEngine_runSort(JNIEnv* env, jobject thiz, jintArray 
     int n = env->GetArrayLength(array);
 
     auto visualizer = [&](int i, int j) {
-        if (env->ExceptionCheck()) return; //
+        if (env->ExceptionCheck()) return; 
 
         env->ReleaseIntArrayElements(array, elements, JNI_COMMIT);
         env->CallVoidMethod(thiz, mid, array, i, j);
 
-        if (speedAnim > 0) usleep(speedAnim * 1000); // Миллисекунды (1000 = 1ms)
+        if (speedAnim > 0) usleep(speedAnim * 1000);
     };
 
     auto iteration = [&](const int* arr, int size) {
@@ -37,6 +37,7 @@ Java_com_example_cpppsu_SortEngine_runSort(JNIEnv* env, jobject thiz, jintArray 
         case 3: Sorting::shellSort(elements, n, asc, visualizer); break;
         case 4: Sorting::heapSort(elements, n, asc, visualizer); break;
         case 5: Sorting::quickSort(elements, 0, n - 1, asc, visualizer); break;
+        default: break;
     }
 
     env->ReleaseIntArrayElements(array, elements, 0);
